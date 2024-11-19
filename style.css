@@ -1,0 +1,658 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+.container {
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-top: 0;
+    border-bottom: 0;
+    /* padding: 0 115px; */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
+
+    padding: 40px;
+
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+header nav ul li a {
+    color: rgb(0, 74, 67);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* .Login {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 500px;
+
+    padding: 13px 25px;
+
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.Expert {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 500px;
+
+    padding: 13px 25px;
+
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+} */
+  
+
+.burger {
+    background: none;
+    border: none;
+    display: none;
+}
+
+.SignInUp a {
+    color: rgb(125, 119, 252);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    overflow: hidden;
+
+    text-decoration: none;
+
+    background: none;
+    border: none;
+
+    padding: 0px 15px;
+}
+
+.SignInUp a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: visible;
+    gap: 100px;
+}
+  
+#about {
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    background: rgb(241, 246, 246);
+}
+
+#about .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 36px;
+}
+
+
+
+#about .content h1 {
+    overflow: hidden;
+    color: rgb(0, 74, 67);
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+#about .content span {
+    color: rgb(52, 94, 90);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#about .content span a {
+    color: rgb(88, 209, 189);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    transition: 0.2s;
+}
+
+#about .content span a:hover {
+    color: rgb(48, 179, 157);
+}
+
+
+
+#about .content h1 span {
+    color: #ff8a56;
+}
+#about .content p {
+    color: rgb(52, 94, 90);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+#about .content .btms {
+    display: flex;
+    gap: 10px;
+}
+
+.supports .content img {
+    width: 430px;
+}
+
+
+
+
+.btms .black {
+    border-radius: 12px;
+    background: rgb(255, 173, 61);
+
+    padding: 21px 138px;
+
+    color: rgb(0, 74, 67);
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 700;
+
+    transition: 0.2s;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.btms .black:hover {
+    background: rgb(236, 155, 41);
+}
+
+#about img {
+    width: 688px;
+    /* height: 595px; */
+    flex-shrink: 0;
+}
+  
+
+
+
+
+
+.supports {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    padding-top: 0px;
+    background: rgb(255, 255, 255);
+}
+
+.supports h3 {
+    color: rgb(0, 74, 67);
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.supports .content {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+
+
+
+
+.supports-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    cursor: default;
+    gap: 20px;
+}
+
+
+.supports-info .stroka {
+    color: rgb(0, 74, 67);
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 400;
+
+    transition: 0.2s;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.supports-info .stroka:hover {
+    transform: scale(1.1);
+}
+
+.supports-info .stroka .svg {
+    width: 30px;
+}
+
+
+.serves {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    background: rgb(241, 246, 246);
+}
+
+.serves h3 {
+    color: rgb(0, 74, 67);
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.serves .cards {
+    display: flex;
+    flex-direction: row;
+    width: 967px;
+    gap: 30px;
+}
+
+
+
+
+
+.serves .cards .card {
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* gap: 20px; */
+}
+
+.serves .cards .card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+.serves .cards .card h3 {
+    color: rgb(0, 74, 67);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.serves .cards .card p {
+    color: rgb(52, 94, 90);
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.serves .cards .card a {
+    color: rgb(125, 119, 252);
+    font-family: Roboto;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* .serves .cards .card img {
+    display: flex;
+    justify-content: center;
+} */
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background: rgb(0, 74, 67);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 55px;
+    padding-bottom: 70px;
+
+    /* padding: 4%; */
+}
+
+footer .info {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+footer .info .logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+footer .info .logo span {
+    color: rgb(216, 235, 233);
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer .info .logo a {
+    color: rgb(216, 235, 233);
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+footer .info .logo .dop-socseti{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+footer .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+
+footer .cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 145px;   
+}
+
+footer .cards .card span{
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+footer .cards .card a{
+    color: rgb(216, 235, 233);
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+footer .info .link {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+
+@media screen and (max-width: 1920px) {
+    /* footer {
+        padding-top: 90px;
+        padding-right: 275px;
+        padding-left: 275px;
+        padding-bottom: 100px;
+    } */
+
+    #about img {
+        width: 800px;
+    }
+
+    .container {
+        width: max-content;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    header nav {
+        display: none;
+        /* gap: 20px; */
+    }
+
+
+
+    
+    .serves .cards {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 70px;
+        padding: 170px;
+    }
+
+
+    .supports .content {
+        flex-direction: column;
+    }
+
+
+
+
+    .burger {
+        display: block;
+    }
+
+    #about img {
+        display: none;
+    }
+
+    footer .cards {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    footer .info {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+    }
+
+    footer .info .link {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    
+    .serves .cards {
+        width: 875px;
+    } 
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .supports .content {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+
+    .supports .content {
+        flex-direction: column;
+    }
+
+
+    .serves .cards {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 70px;
+        padding: 170px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer .info {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 17px;
+    }
+
+    #about .content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btms .black {
+        padding: 21px 100px;
+    }
+
+    #about .content h1 {
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    .serves .cards .card {
+        width: 410px;
+    }
+
+    footer .info .link {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .btms .black {
+        padding: 21px 95px;
+    }
+
+    .supports h3 {
+        font-size: 31px;
+    }
+
+
+    .serves .cards {
+        padding: 0px;
+    }
+
+    .serves .cards .card {
+        width: 390px;
+    }
+
+    .serves h3 {
+        font-size: 28px;
+    }
+
+
+
+
+    .supports .content {
+        padding: 10px;
+        gap: 30px;
+    }
+
+    .supports .content img {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .btms .black {
+        padding: 21px 80px;
+    }
+}
+
